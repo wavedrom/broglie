@@ -11,7 +11,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "eslint lib test && nyc -r=text -r=lcov mocha"
+    "test": "eslint lib test && nyc -r=text -r=lcov mocha",
+    "coverage": "nyc report -r=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "@drom/eslint-config": "^0.10.0",
     "browserify": "^17.0.0",
     "chai": "^4.3.6",
+    "coveralls": "^3.1.1",
     "eslint": "^8.14.0",
     "mocha": "^10.0.0",
     "nyc": "^15.1.0"

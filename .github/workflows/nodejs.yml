@@ -4,12 +4,11 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        node-version: [14, 16, 18]
+        node-version: [12, 14, 16, 18]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
@@ -22,5 +21,9 @@ jobs:
       run: |
         npm install
         npm test
+    - name: Coveralls
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
       env:
         CI: true
