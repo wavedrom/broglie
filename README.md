@@ -2,4 +2,12 @@
 
 [![NPM version](https://img.shields.io/npm/v/broglie.svg)](https://www.npmjs.org/package/broglie) [![Tests](https://github.com/wavedrom/broglie/actions/workflows/nodejs.yml/badge.svg)](https://github.com/wavedrom/broglie/actions/workflows/nodejs.yml) [![Coverage Status](https://coveralls.io/repos/github/wavedrom/broglie/badge.svg?branch=trunk)](https://coveralls.io/github/wavedrom/broglie?branch=trunk)
 
-Matter wave
+## Overview
+
+WaveForm server provides API to run simulations, watch waveform dumps, send data to viewers.
+
+## Documentation
+
+## License
+
+
